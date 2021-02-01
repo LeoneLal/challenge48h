@@ -23,3 +23,4 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/EnigmeAlgorithmique', [AlgorithmeController::class, 'index'])->name('index');
 Route::get('/EnigmeAlgorithmique/exo1', [AlgorithmeController::class, 'exo1'])->name('exo1');
+Route::get('/EnigmeAlgorithmique/exo2', [AlgorithmeController::class, 'exo2'])->name('exo2');
