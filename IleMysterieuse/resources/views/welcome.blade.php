@@ -474,16 +474,14 @@
                 <label for="FinalPass">Veuillez entrer le code :</label>
                 <input type="text" id="FinalPass" name="FinalPass">
                 <input type="submit" value="Envoyer">
+            <div class="presentation">
+                    <!--Texte de présentation du projet-->
+                <p>Bonjour et bienvenue sur l'île Mystérieuse ! On espère que vous êtes bien réveillé, car chaque détail compte. Soyez attentifs, gardez les yeux grands ouverts.<span id="foo">.</span>. car les indices peuvent être n'importe où ! Arriverez-vous à percer le mystère qui règne ici ? Tout repose sur vous ! Bon courage..
+                </p>
             </div>
         </div>
-        <div class="presentation">
-            <p>Bonjour et bienvenue sur l'île Mystérieuse ! On espère que vous êtes bien réveillé, car chaque détail compte. Soyez attentifs, gardez les yeux grands ouverts.
-                <span id="ref">.</span>. car les indices peuvent être n'importe où ! Arriverez-vous à percer le mystère qui règne ici ? Tout repose sur vous ! Bon courage..
-            </p>
         </div>
-    </div>
-    </div>
-
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 
 </html>
