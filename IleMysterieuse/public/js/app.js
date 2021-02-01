@@ -1,8 +1,5 @@
-function initElement()
-{
-  var p = document.getElementById("ref");
-  p.onclick = showLink;
-};
+var p = document.getElementById("ref");
+p.onclick = showLink;
 
 function showLink()
 {
