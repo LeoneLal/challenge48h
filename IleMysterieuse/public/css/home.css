@@ -23,12 +23,7 @@ li {
 }
 
 .corps {
-    margin-left: 10px;
-}
-
-.corps h1 {
-    color: rgb(27, 22, 22);
-    text-align: center;
+    margin-left: 40px;
 }
 
 .corps p {
@@ -91,11 +86,11 @@ li {
 .inner_header {
     width: 90%;
     height: 100%;
-    display: block;
+    display: flex;
+    justify-content: space-between;
     margin: 0 auto;
 }
 .navbar-brand {
-    position: absolute;
     margin-top: 40px;
     margin-left: 10px;
 }
@@ -103,7 +98,6 @@ li {
     height: 100%;
     display: table;
     float: left;
-    margin-left: 600px;
 }
 .logo_container a {
     height: 100%;
@@ -125,12 +119,12 @@ li {
 .navigation {
     float: right;
     height: 70%;
+    padding-left: 0;
 }
 .navigation li {
     height: 100%;
     display: table;
     float: left;
-    padding: 0 20px;
 }
 .navigation li:last-child {
     padding-right: 0;
@@ -158,31 +152,38 @@ li {
     color: rgb(249, 200, 220);
     font-size: 18px;
 }
-@media only screen and (max-width: 1230px) {
+/* @media only screen and (max-width: 1230px) {
     .navigation {
         display: none;
     }
-}
+} */
 
+/* Cartes : */
 .cartes {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
     grid-gap: 20px;
     margin-left: 20px;
     margin-bottom: 50px;
+    margin-top: 70px;
 }
 .carte {
     display: grid;
     grid-template-rows: max-content 300px 1fr;
-    width: 700px;
+    width: 90%;
     height: 800px;
     border-radius: 10px;
+    margin-bottom: 25px;
 }
 
 .un {
     box-shadow: inset 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
     -moz-box-shadow: inset 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
     -webkit-box-shadow: inset 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    background-color: rgba(249, 200, 220, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #title-Tag-Line {
 font-size: 20px;
@@ -200,18 +201,17 @@ transform: translate(0px, 50px);
 z-index: 5;
 } */
 /* form animation starts */
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 .form {
     background: #fff;
     box-shadow: 0 0 20px 0 rgba(37, 42, 49, 0.6);
     border-radius: 5px;
     max-width: 480px;
-    margin-left: 9%;
-    margin-top: 10%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    left: 0;
-    right: 0;
-    position: absolute;
+    padding: 50px;
     border-top: 5px solid #999;
     /*   z-index: 1; */
     animation: bounce 1.5s infinite;
@@ -270,15 +270,21 @@ z-index: 5;
 }
 @keyframes bounce {
 0% {
-    tranform: translate(0, 0);
+    tranform: translate(0, -8px);
 }
 50% {
-    transform: translate(0, 15px);
+    transform: translate(0, 8px);
 }
-} 
+}
+.resultJV {
+    margin-top: 15px;
+}
 
 .deux {
-    background-color: rgb(249, 200, 220);
+    box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    background-color: rgba(80, 76, 78, 0.3);
 }
 .deux .mainText {
     color: rgb(49, 47, 47);
@@ -286,17 +292,45 @@ z-index: 5;
     margin-inline: 30px;
     margin-top: 25%;
 }
-.deux .textToo {
-    color: rgb(249, 200, 220);
-    font-size: 20px;
-    margin-inline: 30px;
-    margin-top: 15px;
+.deux .mainText .textToo {
+    color: rgb(201, 194, 194);
+    font-size: 0.4px;
 }
 
 .trois {
-    background-color: rgb(249, 200, 220);
+    box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    background-color: rgba(80, 76, 78, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quatre {
-    background-color: rgb(240, 240, 154);
+    box-shadow: inset 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -moz-box-shadow: inset 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -webkit-box-shadow: inset 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    background-color: rgba(249, 200, 220, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form2 {
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(37, 42, 49, 0.6);
+    border-radius: 5px;
+    max-width: 480px;
+    padding: 50px;
+    border-top: 5px solid #999;
+    /*   z-index: 1; */
+    animation: horizontalBounce 1.5s infinite;
+}
+@keyframes horizontalBounce {
+    0% {
+        tranform: translate(-8px, 0);
+    }
+    50% {
+        transform: translate(8px, 0);
+    }
 }

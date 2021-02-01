@@ -71,6 +71,10 @@
                                         @csrf
                                     </form>
                                 </div>
+
+                                <div>
+                                    <a href="{{ url('/EnigmeAlgorithmique') }}">Exercices</a>
+                                </div>
                             </li>
                         @endguest
                     </ul>
