@@ -47,7 +47,7 @@ class HomeController extends Controller
         $livre = strtolower(request()->input("leLivre"));
 
         if($livre == "vingtmillelieuessouslesmers"){
-            $resultLivre = "énigme 4.3 : g";
+            $resultLivre = "énigme 4.3 : g  http://127.0.0.1:8000/txt/4ef5s9a.txt";
         }else{
             $resultLivre = "Wrong answer";
         };
