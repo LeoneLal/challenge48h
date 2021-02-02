@@ -35,9 +35,9 @@ class HomeController extends Controller
         $msg = str_replace($search, $replace, $msg);
         
         if($msg == "romancier precurseur des decouvertes modernes"){
-            $result = "Identifiant BDD";
+            $result = "ID = romancier";
         }else{
-            $result = "Retry";
+            $result = "Retry :)";
         };
         return view('home')->with('result', $result);
     }
