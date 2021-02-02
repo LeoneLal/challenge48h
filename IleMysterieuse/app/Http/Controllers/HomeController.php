@@ -35,7 +35,7 @@ class HomeController extends Controller
         $msg = str_replace($search, $replace, $msg);
         
         if($msg == "romancier precurseur des decouvertes modernes"){
-            $resultDescription = "énigme 4 : ID = romancier";
+            $resultDescription = "énigme 4.2 : 6 ID = romancier";
         }else{
             $resultDescription = "Retry :)";
         };
@@ -47,9 +47,9 @@ class HomeController extends Controller
         $livre = strtolower(request()->input("leLivre"));
 
         if($livre == "vingtmillelieuessouslesmers"){
-            $resultLivre = "énigme 5  (?) : Good :)";
+            $resultLivre = "énigme 4.3 : g";
         }else{
-            $resultLivre = "Not Good :(";
+            $resultLivre = "Wrong answer";
         };
         return view('home')->with('resultLivre', $resultLivre);
     }
