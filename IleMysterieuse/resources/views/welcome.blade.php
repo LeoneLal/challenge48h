@@ -19,17 +19,17 @@
     <!--Liens authentification-->
     <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
         @if (Route::has('login'))
-        <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+        <div class="fixed top-0 right-0 px-6 py-4 sm:block">
             @auth
             <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
             @else
             <a href="{{ route('login') }}" class="log"><button class="button">Login</button></a>
-            @endauth 
+            @endauth
             <a href="{{ url('/EnigmeAlgorithmique') }}">Exercices</a>
-        @endif
+            @endif
         </div>
-        
-        
+
+
 
 
         <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
@@ -53,4 +53,5 @@
         </div>
         <script src="{{ asset('js/app.js') }}"></script>
 </body>
+
 </html>
