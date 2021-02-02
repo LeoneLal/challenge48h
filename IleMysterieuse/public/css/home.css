@@ -345,7 +345,7 @@ z-index: 5;
 }
 .julesVerne {
     visibility: visible;
-    transition: visibility , opacity 2s linear;
+    transition: visibility 99999s, opacity 2s linear;
     z-index: 20;
 }
 .julesVerne.disappear {
@@ -362,7 +362,7 @@ z-index: 5;
 .cle {
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 2s linear;
+    transition: visibility 0s, opacity 3s linear;
 }
 .cle.appear {
     visibility: visible;
