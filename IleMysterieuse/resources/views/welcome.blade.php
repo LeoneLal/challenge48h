@@ -24,9 +24,12 @@
             <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
             @else
             <a href="{{ route('login') }}" class="log"><button class="button">Login</button></a>
-            @endauth
-        </div>
+            @endauth 
+            <a href="{{ url('/EnigmeAlgorithmique') }}">Exercices</a>
         @endif
+        </div>
+        
+        
 
 
         <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
