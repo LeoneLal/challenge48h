@@ -49,7 +49,7 @@ class HomeController extends Controller
         if($livre == "vingtmillelieuessouslesmers"){
             $resultLivre = "énigme 4.3 : g";
         }else{
-            $resultLivre = "Not Good :(";
+            $resultLivre = "Wrong answer";
         };
         return view('home')->with('resultLivre', $resultLivre);
     }

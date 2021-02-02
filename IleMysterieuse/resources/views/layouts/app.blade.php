@@ -12,6 +12,7 @@
     <!-- Scripts -->
     <script src="{{ asset('js/burger.js') }}" defer></script>
     <script src="{{ asset('js/form1.js') }}" defer></script>
+    <script src="{{ asset('js/image.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
