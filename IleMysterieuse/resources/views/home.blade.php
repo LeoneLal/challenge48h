@@ -49,7 +49,10 @@
                         <span>Jules Verne</span>
                     </blockquote>
 
-                    <img src="{{ asset('img/julesVerne.png') }}" alt="énigme 6 ?">
+                    <img src="{{ asset('img/julesVerne.png') }}" alt="énigme 6 ?" class="julesVerne">
+                    <div class="divCle">
+                        <p class="cle">requeteSQL()</p>
+                    </div>
                 </div>
                 <div class="carte quatre">
                     <div class="wrapper">
