@@ -35,7 +35,7 @@
         <div class="exo">
             <form method="GET" action="{{ route('exo1') }}">
                 @csrf
-                <h2>Réponse pour le premier exercice</h2>
+                <h2>Un conflit, un script JS, une soirée dans un bar</h2>
                 <label class="form-label">Heures : </label>
                 <input name="hours" class="form-control" type="text"/>
 
@@ -53,8 +53,8 @@
         <div class="exo">
             <form method="GET" action="{{ route('exo2') }}">
                 @csrf
-                <h2>Réponse pour le deuxième exercice</h2>
-                <label class="form-label"> Date : </label>
+                <h2>Tout se finit par un Bucket</h2>
+                <label class="form-label"> Période en années : </label>
                 <input name="date" type="text" class="form-control"/>
 
                 <button class="btn-style" type="submit">Envoyer</button>
