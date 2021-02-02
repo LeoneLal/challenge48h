@@ -3,9 +3,9 @@
 @section('content')
     <!--Menu "burger"-->
     <div class="menu">
-        <p>Bla Bla Bla 1</p>
-        <p>Bla Bla Bla 2</p>
-        <p>Bla Bla Bla 3</p>
+        <p><a href="https://fr.wikipedia.org/wiki/Jules_Verne">Voici Jules Verne</a></p>
+        <p><a href="https://www.linternaute.fr/biographie/litterature/1775048-jules-verne-biographie-courte-dates-citations/#:~:text=Biographie%20courte%20de%20Jules%20Verne,une%20famille%20d'armateurs%20nantais.">Sa vie</a></p>
+        <p><a href="https://www.livredepoche.com/auteur/jules-verne">Ses livres</a></p>
     </div>
 
     <!--Bouton menu "burger" :-->
@@ -31,9 +31,9 @@
                             <button class="submit formEntry" onclick="thanks()">Valider</button>
                         </form>
 
-                        @isset($result)
-                            <div class="resultJV">
-                                <p>{{ $result }}</p>
+                        @isset($resultDescription)
+                            <div class="result">
+                                <p>{{ $resultDescription }}</p>
                             </div>
                         @endisset
                     </div>
@@ -44,16 +44,36 @@
                     </p>
                 </div>
                 <div class="carte trois">
-                    <img src="../../public/img/julesVerne.png" alt="Jules Verne">
+                    <blockquote class="citation">
+                        C'est à force de répandre le bon grain qu'une semence finit par tomber dans un sillon fertile.
+                        <span>Jules Verne</span>
+                    </blockquote>
+
+                    <img src="{{ asset('img/julesVerne.png') }}" alt="énigme 6 ?">
                 </div>
                 <div class="carte quatre">
-                    <form method="GET" action="" class="form2">
-                        <div class="pageTitle title">Form 2</div>
-                        <label for="form2" class="secondaryTitle title">Je ne sais pas quoi mettre dans ce formulaire</label>
-                        <textarea class="message formEntry" placeholder="Réponse" name="msg2"></textarea>
-                        <br>
-                        <button class="submit formEntry" onclick="thanks()">Submit</button>
-                    </form>
+                    <div class="wrapper">
+                        <form method="GET" action="{{ route('leLivre') }}" class="form2">
+                            @csrf
+                            <div class="pageTitle title">Les oeuvres</div>
+                            <label for="form2" class="secondaryTitle title">Remplacez le nom du livre faussé par le nom correct</label>
+                            <select class="formEntry select" name="leLivre" id="leLivre">
+                                <option value="leTourDuMondeEn80Jours">Le Tour Du Monde en 80 jours</option>
+                                <option value="vingtMilleLieuxSousLesMers">Vingt Mille Lieux Sous les Mers</option>
+                                <option value="voyageAuCentreDeLaTerre">Voyage au Centre de la Terre</option>
+                                <option value="lIleMysterieuse">L'Île Mystérieuse</option>
+                                <option value="deLaTerreALaLune">De la Terre à la Lune</option>
+                            </select>
+                            <br>
+                            <button class="submit formEntry" onclick="thanks()">Submit</button>
+                        </form>
+
+                        @isset($resultLivre)
+                            <div class="result">
+                                <p>{{ $resultLivre }}</p>
+                            </div>
+                        @endisset
+                    </div>
                 </div>
             </div>
         </div>

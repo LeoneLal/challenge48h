@@ -55,6 +55,7 @@ li {
 .menu {
     position: fixed;
     left: 0;
+    top: 0;
     background-color: rgba(249, 200, 220, 0.7);
     width: 25%;
     height: 100%;
@@ -72,7 +73,11 @@ li {
     margin: 10px 20%;
 }
 .menu p:first-child {
-    margin-top: 200px;
+    margin-top: 300px;
+}
+.menu p a {
+    color: #101010;
+    font-size: larger;
 }
 
 /* Barre de navigation */
@@ -276,7 +281,7 @@ z-index: 5;
     transform: translate(0, 8px);
 }
 }
-.resultJV {
+.result {
     margin-top: 15px;
 }
 
@@ -305,7 +310,39 @@ z-index: 5;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
+.citation{
+    font-size: 1.4em;
+    width:60%;
+    margin:50px auto;
+    font-family: 'Dancing Script', cursive;
+    font-style:italic;
+    color: #555555;
+    padding:1.2em 30px 1.2em 75px;
+    border-left:8px solid rgb(249, 200, 220) ;
+    line-height:1.6;
+    position: relative;
+    background:#EDEDED;
+}
+.citation::before{
+    font-family:Arial;
+    content: "\201C";
+    color:rgb(249, 200, 220);
+    font-size:4em;
+    position: absolute;
+    left: 10px;
+    top:-10px;
+}
+.citation::after{
+    content: '';
+}
+.citation span{
+    display:block;
+    color:#333333;
+    font-weight: bold;
+    margin-top:1em;
+  }
 
 .quatre {
     box-shadow: inset 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
@@ -325,6 +362,9 @@ z-index: 5;
     border-top: 5px solid #999;
     /*   z-index: 1; */
     animation: horizontalBounce 1.5s infinite;
+}
+.select {
+    background-color: rgb(236, 236, 236);
 }
 @keyframes horizontalBounce {
     0% {

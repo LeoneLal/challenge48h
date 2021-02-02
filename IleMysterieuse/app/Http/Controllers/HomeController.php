@@ -35,10 +35,22 @@ class HomeController extends Controller
         $msg = str_replace($search, $replace, $msg);
         
         if($msg == "romancier precurseur des decouvertes modernes"){
-            $result = "ID = romancier";
+            $resultDescription = "énigme 4 : ID = romancier";
         }else{
-            $result = "Retry :)";
+            $resultDescription = "Retry :)";
         };
-        return view('home')->with('result', $result);
+        return view('home')->with('resultDescription', $resultDescription);
+    }
+
+    public function leBonLivre(Request $request)
+    {
+        $livre = strtolower(request()->input("leLivre"));
+
+        if($livre == "vingtmillelieuessouslesmers"){
+            $resultLivre = "énigme 5  (?) : Good :)";
+        }else{
+            $resultLivre = "Not Good :(";
+        };
+        return view('home')->with('resultLivre', $resultLivre);
     }
 }
