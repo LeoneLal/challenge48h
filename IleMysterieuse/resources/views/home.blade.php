@@ -51,7 +51,7 @@
 
                     <img src="{{ asset('img/julesVerne.png') }}" alt="énigme 6 ?" class="julesVerne">
                     <div class="divCle">
-                        <p class="cle">requeteSQL()</p>
+                        <p class="cle">énigme 4.5 : k      requeteSQL()</p>
                     </div>
                 </div>
                 <div class="carte quatre">
