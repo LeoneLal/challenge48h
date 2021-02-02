@@ -35,7 +35,7 @@
 
         <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
             <div class="flex justify-center pt-8  sm:pt-0">
-                <!--Enigme 1 : 2            https://we.tl/t-y3jRwVncHP-->
+                <!--Enigme 1 : 2            https://we.tl/t-bC4IP1VD7x-->
                 <img class="hack" src="{{ URL::asset('img/hacker.png')}}" width="200" height="200" />
             </div>
 
