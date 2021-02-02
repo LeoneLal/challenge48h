@@ -24,8 +24,8 @@ class AlgorithmeController extends Controller
 
     public function exo2(Request $request){
         $date = request()->input('date');
-        if($date == 1869){
-            $result_exo2 = "Félicitation ! Enigme 3.2 : A Nouvel indice : XXV-102-9-4    Allez voir Jules Vernes";
+        if($date == 54){
+            $result_exo2 = "Félicitation ! Enigme 3.2 : 9 Nouvel indice : XXV-102-9-4    Allez voir Jules Vernes";
         }else{
             $result_exo2 = "Essaie encore";
         };
