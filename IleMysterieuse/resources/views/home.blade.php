@@ -40,7 +40,7 @@
                 </div>
                 <div class="carte deux">
                     <p class="mainText">
-                        On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain.<span class="textToo">47.21322, -1.55484</span>These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.<span class="textToo">Plaque</span>The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+                        On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain.<span class="textToo">Enigme 4.1 : h     47.21322, -1.55484</span>These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.<span class="textToo">Plaque</span>The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
                     </p>
                 </div>
                 <div class="carte trois">
@@ -51,7 +51,7 @@
 
                     <img src="{{ asset('img/julesVerne.png') }}" alt="énigme 4.4 : 68 74 74 70 73 3a 2f 2f 79 6f 75 74 75 2e 62 65 2f 4f 72 63 69 6d 33 46 33 2d 6b 6f 3f 74 3d 37 39 34 31" class="julesVerne">
                     <div class="divCle">
-                        <p class="cle">requeteSQL()</p>
+                        <p class="cle">énigme 4.5 : k      requeteSQL()</p>
                     </div>
                 </div>
                 <div class="carte quatre">

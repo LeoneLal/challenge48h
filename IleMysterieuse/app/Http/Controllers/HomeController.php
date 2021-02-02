@@ -35,7 +35,11 @@ class HomeController extends Controller
         $msg = str_replace($search, $replace, $msg);
         
         if($msg == "romancier precurseur des decouvertes modernes"){
+<<<<<<< HEAD
             $resultDescription = "énigme 4.2 : ID = romancier e";
+=======
+            $resultDescription = "énigme 4.2 : 6 ID = romancier";
+>>>>>>> 9ff052e6cb6b4b95ad88bf27266317786efdea07
         }else{
             $resultDescription = "Retry :)";
         };
@@ -47,10 +51,21 @@ class HomeController extends Controller
         $livre = strtolower(request()->input("leLivre"));
 
         if($livre == "vingtmillelieuessouslesmers"){
-            $resultLivre = "énigme 4.3 : pyroxenique K";
+            $resultLivre = "énigme 4.3 : g  http://127.0.0.1:8000/txt/4ef5s9a.txt";
         }else{
             $resultLivre = "Wrong answer";
         };
         return view('home')->with('resultLivre', $resultLivre);
+    }
+
+    public function enigmeFinale(Request $request){
+        $password = request()->input("finalpass");
+        if($password == "2p!9h6g&kA4340")
+        {
+            return view('final');
+        }else{
+            $wrong = "Ce n'est pas la bonne réponse";
+            return view('welcome')->with('wrong', $wrong);
+        }
     }
 }
