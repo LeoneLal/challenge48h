@@ -345,7 +345,7 @@ z-index: 5;
 }
 .julesVerne {
     visibility: visible;
-    transition: visibility infinite, opacity 2s linear;
+    transition: visibility , opacity 2s linear;
     z-index: 20;
 }
 .julesVerne.disappear {
