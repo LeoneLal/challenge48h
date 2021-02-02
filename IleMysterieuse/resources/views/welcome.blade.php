@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/welcome.css">
 
 </head>
@@ -19,7 +20,7 @@
     <!--Liens authentification-->
     <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
         @if (Route::has('login'))
-        <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+        <div class="fixed top-0 right-0 px-6 py-4 sm:block">
             @auth
             <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
             @else
@@ -41,9 +42,16 @@
             <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                 <h1>Boss Final :</h1>
                 <!--Code reponse finale-->
-                <label for="FinalPass">Veuillez entrer le code :</label>
-                <input type="text" id="FinalPass" name="FinalPass">
-                <input type="submit" value="Envoyer">
+                <form method="GET" action="{{ route('enigmeFinale') }}">
+                    <label for="FinalPass">Veuillez entrer le code :</label>
+                    <input type="text" id="FinalPass" name='finalpass'>
+                    <input type="submit" value="Envoyer">
+                </form>
+                @isset($wrong)
+                    <div class="alert alert-danger">
+                        <p>{{ $wrong }}</p>
+                    </div>
+                @endisset
                 <div class="presentation">
                     <!--Texte de présentation du projet-->
                     <p>Bonjour et bienvenue sur l'île Mystérieuse ! On espère que vous êtes bien réveillé, car chaque détail compte. Soyez attentifs, gardez les yeux grands ouverts.<span id="ref">.</span>. car les indices peuvent être n'importe où ! Arriverez-vous à percer le mystère qui règne ici ? Tout repose sur vous ! Bon courage..

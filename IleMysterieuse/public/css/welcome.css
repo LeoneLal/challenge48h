@@ -429,3 +429,11 @@ p {
     height: 25vmin;
     margin-left: 1em;
 }
+
+.alert-danger p {
+    border: none;
+    width: auto;
+    height: auto;
+    margin: 0;
+    text-align: center;
+}

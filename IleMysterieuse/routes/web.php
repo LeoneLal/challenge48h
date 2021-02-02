@@ -23,6 +23,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/home/descriptionJV', [App\Http\Controllers\HomeController::class, 'description'])->name('descriptionJV');
 Route::get('/home/leLivre', [App\Http\Controllers\HomeController::class, 'leBonLivre'])->name('leLivre');
+Route::get('/victoire', [App\Http\Controllers\HomeController::class, 'enigmeFinale'])->name('enigmeFinale');
 Route::get('/EnigmeAlgorithmique', [AlgorithmeController::class, 'index'])->name('index');
 Route::get('/EnigmeAlgorithmique/exo1', [AlgorithmeController::class, 'exo1'])->name('exo1');
 Route::get('/EnigmeAlgorithmique/exo2', [AlgorithmeController::class, 'exo2'])->name('exo2');
