@@ -35,11 +35,7 @@ class HomeController extends Controller
         $msg = str_replace($search, $replace, $msg);
         
         if($msg == "romancier precurseur des decouvertes modernes"){
-<<<<<<< HEAD
-            $resultDescription = "énigme 4.2 : ID = romancier e";
-=======
             $resultDescription = "énigme 4.2 : 6 ID = romancier";
->>>>>>> 9ff052e6cb6b4b95ad88bf27266317786efdea07
         }else{
             $resultDescription = "Retry :)";
         };
