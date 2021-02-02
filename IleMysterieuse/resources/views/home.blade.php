@@ -6,6 +6,8 @@
         <p><a href="https://fr.wikipedia.org/wiki/Jules_Verne">Voici Jules Verne</a></p>
         <p><a href="https://www.linternaute.fr/biographie/litterature/1775048-jules-verne-biographie-courte-dates-citations/#:~:text=Biographie%20courte%20de%20Jules%20Verne,une%20famille%20d'armateurs%20nantais.">Sa vie</a></p>
         <p><a href="https://www.livredepoche.com/auteur/jules-verne">Ses livres</a></p>
+        <p><a href="https://www.youtube.com/watch?v=FoxBlQi-MNA">Son histoire en vidéo</a></p>
+        <p><a href="https://www.babelio.com/quiz/1820/Jules-Verne">Teste-toi !</a></p>
     </div>
 
     <!--Bouton menu "burger" :-->
