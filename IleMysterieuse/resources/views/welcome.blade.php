@@ -35,7 +35,7 @@
 
         <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
             <div class="flex justify-center pt-8  sm:pt-0">
-                <!--Enigme 1 : 2            https://we.tl/t-y3jRwVncHP-->
+                <!--Enigme 1 : 2            https://we.tl/t-AK75gMJko0-->
                 <img class="hack" src="{{ URL::asset('img/hacker.png')}}" width="200" height="200" />
             </div>
 
@@ -48,9 +48,9 @@
                     <input type="submit" value="Envoyer">
                 </form>
                 @isset($wrong)
-                    <div class="alert alert-danger">
-                        <p>{{ $wrong }}</p>
-                    </div>
+                <div class="alert alert-danger">
+                    <p>{{ $wrong }}</p>
+                </div>
                 @endisset
                 <div class="presentation">
                     <!--Texte de présentation du projet-->
